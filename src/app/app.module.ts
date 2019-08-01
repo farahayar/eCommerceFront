@@ -19,6 +19,7 @@ import { AdminService } from './services/admin.service';
 import { SellerService } from './services/seller.service';
 import { UserService } from './services/user.service';
 import { ShoppingCartComponent } from './src/app/components/ecom/shopping-cart/shopping-cart.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { ShoppingCartComponent } from './src/app/components/ecom/shopping-cart/s
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     EcomService,
